@@ -1,0 +1,27 @@
+{
+  "name": "ai-mcq--generator",
+  "version": "1.0.0",
+  "main": "[index.js,test.js]",
+  "scripts": {
+    "dev": "nodemon --watch views --ext js,ejs index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@huggingface/inference": "^4.5.1",
+    "@langchain/community": "^0.3.48",
+    "@langchain/core": "^0.3.62",
+    "@langchain/openai": "^0.5.18",
+    "axios": "^1.10.0",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "langchain": "^0.3.29",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.10"
+  }
+}
