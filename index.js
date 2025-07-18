@@ -5,7 +5,7 @@ const routes = require("./routes/routes");
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
-
+app.use(express.json());
 app.use('/', routes)
 
 app.listen(port, () => {
