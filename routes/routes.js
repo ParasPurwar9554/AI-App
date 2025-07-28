@@ -4,8 +4,8 @@ const bodyParser = require("body-parser");
 const home = require('../controllers/home');
 const chatmodel = require('../controllers/chatmodel');
 const loginContoller = require('../controllers/loginContoller');
+const  mcqGenerator  = require('../controllers/mcqController');
 const {authenticateToken} = require('../middleware/authMiddleware');
-const { mcqGenerator } = require('../controllers/mcqController');
 
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: false }));
