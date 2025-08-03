@@ -14,6 +14,6 @@ router.use(express.static('public'));
 router.get('/', home.mcq);
 router.post('/login', loginContoller.login);
 router.post('/chat-model', authenticateToken ,chatmodel.chatModel);
-router.post('/mcq-generator', authenticateToken ,mcqGenerator.mcqGenerator);
+router.post('/mcq-generator',authenticateToken,mcqGenerator.mcqGenerator);
 
 module.exports = router;

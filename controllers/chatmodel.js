@@ -6,7 +6,7 @@ const chatModel = async (req, res, next) => {
   let user_prompt = req.body.user_prompt;
 
   if (!system) {
-    system = "You are a helpful assistant.";
+    system = "You are a helpful assistant.Respond in a maximum of 50 characters.";
   }
 
   if (!user_prompt) {
@@ -15,11 +15,7 @@ const chatModel = async (req, res, next) => {
   }
 
   try {
-    const llm = new ChatOllama({
-      model: "phi:2.7b",
-      temperature: 0,
-      maxRetries: 2,
-    });
+    const llm = new ChatOllama({ model: "llama3.1:latest", temperature: 0.1 });
     const aiMsg = await llm.invoke([
       ["system", system],
       ["human", user_prompt],
@@ -32,7 +28,7 @@ const chatModel = async (req, res, next) => {
     });
 
   } catch (error) {
-    // Pass error to error handler middleware
+    console.error("Error in chatModel:", error);
     next(error);
   }
 };
