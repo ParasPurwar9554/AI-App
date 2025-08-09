@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { ChatOllama } = require("@langchain/ollama");
 const { RunnableSequence, RunnableLambda } = require("@langchain/core/runnables");
 const { ChatPromptTemplate } = require("@langchain/core/prompts");
