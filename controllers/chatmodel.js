@@ -1,4 +1,3 @@
-const express = require('express');
 const { ChatOllama } = require("@langchain/ollama");
 
 const chatModel = async (req, res, next) => {

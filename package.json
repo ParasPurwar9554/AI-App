@@ -12,8 +12,8 @@
   "description": "",
   "dependencies": {
     "@huggingface/inference": "^4.5.1",
-    "@langchain/community": "^0.3.48",
-    "@langchain/core": "^0.3.68",
+    "@langchain/community": "^0.3.53",
+    "@langchain/core": "^0.3.72",
     "@langchain/ollama": "^0.2.3",
     "@langchain/openai": "^0.5.18",
     "axios": "^1.10.0",
@@ -22,9 +22,12 @@
     "dotenv": "^16.6.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
+    "json2csv": "^6.0.0-alpha.2",
     "jsonwebtoken": "^9.0.2",
     "langchain": "^0.3.30",
+    "multer": "^2.0.2",
     "node-fetch": "^3.3.2",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "pdf-parse": "^1.1.1"
   }
 }
